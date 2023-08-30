@@ -14,7 +14,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var location: CLLocationCoordinate2D?
     @Published var isLoading = false
     
-    override init(){
+    override init() {
         super.init()
         manager.delegate = self
     }
